@@ -1,6 +1,7 @@
 /* header  */
 
 header {
+  width: 100%;
     background: rgb(0, 128, 182);
     background: linear-gradient(
       0deg,
@@ -35,6 +36,7 @@ header {
     padding-left: 0;
     padding-top: 30px;
     width: 100%;
+    
   
   
   }
@@ -52,6 +54,10 @@ header {
     color: white;
   
     cursor: pointer;
+    width: 60px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px, solid, white;
   }
   
   nav {
@@ -60,12 +66,16 @@ header {
   }
   
   .logo {
+    width: 100%;
+    text-align: center;
     font-size: 1.3em;
     color: white;
     padding-bottom: 0;
   }
   
+  
   .logo-wrap {
+    width: 100%;
     font-family: "Parisienne", cursive;
     letter-spacing: 0.5em;
     margin: 0.5em 0;
@@ -92,3 +102,6 @@ header {
     padding-left: 0.5em;
   }
   
+  header nav ul  :hover {
+    background: #219150;
+  }

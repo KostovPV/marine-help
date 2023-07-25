@@ -5,6 +5,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FindComponent } from './core/find/find.component';
 import { AuthComponent } from './auth/auth.component';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -15,6 +16,10 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
   },
+  // {
+  //   path: 'jobs',
+  //   component: JobsComponent,
+  // },
   {
     path: 'find',
     component: FindComponent,
@@ -22,6 +27,10 @@ const routes: Routes = [
   {
     path: 'auth',
     component: AuthComponent,
+  },
+  {
+    path: 'jobs',
+    loadChildren: () => import('./jobs/jobs.module').then((m) => m.JobsModule),
   },
   {
     path:'**',

@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FindComponent } from './find/find.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { ErrorComponent } from './error/error.component';
 
 
 
@@ -12,7 +13,8 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    FindComponent
+    FindComponent,
+    ErrorComponent
   ],
   imports: [
     CommonModule, RouterModule, SharedModule

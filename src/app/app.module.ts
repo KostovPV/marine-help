@@ -10,13 +10,18 @@ import { CoreModule } from './core/core.module';
 import { AuthComponent } from './auth/auth.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
+import { JobsModule } from './jobs/jobs.module';
+import { appInterceptorProvider } from './app.interceptor';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NotFoundComponent,
-    AuthComponent
+    AuthComponent,   
+  
   ],
   imports: [
     CoreModule,
@@ -24,10 +29,11 @@ import { SharedModule } from './shared/shared.module';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+   JobsModule
 
   ],
-  providers: [],
+  providers: [appInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
